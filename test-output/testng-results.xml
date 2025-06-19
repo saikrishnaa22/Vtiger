@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test start execution]]>
+    </line>
+    <line>
+      <![CDATA[Configure the Report]]>
+    </line>
     <line>
       <![CDATA[Database Connected]]>
     </line>
@@ -11,13 +17,16 @@
       <![CDATA[Navigated and logged in]]>
     </line>
     <line>
+      <![CDATA[ON Test Start execution]]>
+    </line>
+    <line>
+      <![CDATA[ OnTest Failure execution]]>
+    </line>
+    <line>
       <![CDATA[Logout]]>
     </line>
     <line>
-      <![CDATA[Navigated and logged in]]>
-    </line>
-    <line>
-      <![CDATA[Logout]]>
+      <![CDATA[Close the browser]]>
     </line>
     <line>
       <![CDATA[Configure the Parallel Exe]]>
@@ -26,250 +35,108 @@
       <![CDATA[Database Connection failed]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-13T18:32:48 IST" name="Default suite" finished-at="2025-06-13T18:33:39 IST" duration-ms="51652">
+  <suite started-at="2025-06-17T17:44:02 IST" name="Default suite" finished-at="2025-06-17T17:44:13 IST" duration-ms="11180">
     <groups>
-      <group name="smoke">
-        <method signature="ContactAllTestSenarios.CreateConttName()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" name="CreateConttName" class="ContactModule.ContactAllTestSenarios"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-06-13T18:32:48 IST" name="Default test" finished-at="2025-06-13T18:33:39 IST" duration-ms="51652">
+    <test started-at="2025-06-17T17:44:02 IST" name="Default test" finished-at="2025-06-17T17:44:13 IST" duration-ms="11180">
       <class name="ContactModule.ContactAllTestSenarios">
-        <test-method is-config="true" signature="ConnectionWithDB()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:32:47 IST" name="ConnectionWithDB" finished-at="2025-06-13T18:32:48 IST" duration-ms="315" status="PASS">
+        <test-method is-config="true" signature="ConnectionWithDB()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:01 IST" name="ConnectionWithDB" finished-at="2025-06-17T17:44:02 IST" duration-ms="317" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Database Connected]]>
             </line>
           </reporter-output>
         </test-method> <!-- ConnectionWithDB -->
-        <test-method is-config="true" signature="ConfigureParallelExe()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:32:48 IST" name="ConfigureParallelExe" finished-at="2025-06-13T18:32:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ConfigureParallelExe()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:02 IST" name="ConfigureParallelExe" finished-at="2025-06-17T17:44:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Configure the Parallel Exe]]>
             </line>
           </reporter-output>
         </test-method> <!-- ConfigureParallelExe -->
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:32:48 IST" name="LaunchTheBrowser" finished-at="2025-06-13T18:32:52 IST" duration-ms="4482" status="PASS">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:02 IST" name="LaunchTheBrowser" finished-at="2025-06-17T17:44:03 IST" duration-ms="1209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:32:52 IST" name="Login" finished-at="2025-06-13T18:32:55 IST" duration-ms="2456" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:03 IST" name="Login" finished-at="2025-06-17T17:44:05 IST" duration-ms="2398" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Navigated and logged in]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateContactWithOrg()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:32:55 IST" name="CreateContactWithOrg" finished-at="2025-06-13T18:33:14 IST" duration-ms="19372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateContactWithOrg -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:14 IST" name="Logout" finished-at="2025-06-13T18:33:17 IST" duration-ms="2609" status="PASS">
+        <test-method signature="CreateConttName()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:05 IST" name="CreateConttName" finished-at="2025-06-17T17:44:11 IST" duration-ms="6109" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at ContactModule.ContactAllTestSenarios.CreateConttName(ContactAllTestSenarios.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Logout]]>
+              <![CDATA[ON Test Start execution]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:17 IST" name="Login" finished-at="2025-06-13T18:33:19 IST" duration-ms="2300" status="PASS">
-          <reporter-output>
             <line>
-              <![CDATA[Navigated and logged in]]>
+              <![CDATA[ OnTest Failure execution]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="CreateConttName()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:19 IST" name="CreateConttName" finished-at="2025-06-13T18:33:28 IST" duration-ms="8611" status="PASS">
-          <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateConttName -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:28 IST" name="Logout" finished-at="2025-06-13T18:33:39 IST" duration-ms="11780" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
-  (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [990026f3f2135fc5bfd3a397e5c396eb, findElement {value=Sign Out, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\91897\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54930}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54930/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 990026f3f2135fc5bfd3a397e5c396eb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
-  (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [990026f3f2135fc5bfd3a397e5c396eb, findElement {value=Sign Out, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\91897\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54930}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54930/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 990026f3f2135fc5bfd3a397e5c396eb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at POMUtilities.HomePomPage.getSignout(HomePomPage.java:56)
-at BaseClassUtility.BaseClass.Logout(BaseClass.java:101)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:12 IST" name="Logout" finished-at="2025-06-17T17:44:13 IST" duration-ms="1113" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logout]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:39 IST" name="Login" finished-at="2025-06-13T18:33:39 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:13 IST" name="CloseTheBrowser" finished-at="2025-06-17T17:44:13 IST" duration-ms="156" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="CreateConttsupportdate()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:39 IST" name="CreateConttsupportdate" finished-at="2025-06-13T18:33:39 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
-  (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [990026f3f2135fc5bfd3a397e5c396eb, findElement {value=Sign Out, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\91897\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54930}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54930/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 990026f3f2135fc5bfd3a397e5c396eb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
-  (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [990026f3f2135fc5bfd3a397e5c396eb, findElement {value=Sign Out, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\91897\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54930}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54930/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 990026f3f2135fc5bfd3a397e5c396eb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at POMUtilities.HomePomPage.getSignout(HomePomPage.java:56)
-at BaseClassUtility.BaseClass.Logout(BaseClass.java:101)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateConttsupportdate -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:39 IST" name="Logout" finished-at="2025-06-13T18:33:39 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:39 IST" name="CloseTheBrowser" finished-at="2025-06-13T18:33:39 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
-        <test-method is-config="true" signature="CloseParallelExe()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:39 IST" name="CloseParallelExe" finished-at="2025-06-13T18:33:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="CloseParallelExe()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:13 IST" name="CloseParallelExe" finished-at="2025-06-17T17:44:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Configure the Parallel Exe]]>
             </line>
           </reporter-output>
         </test-method> <!-- CloseParallelExe -->
-        <test-method is-config="true" signature="CloseConnectionWithDB()[pri:0, instance:ContactModule.ContactAllTestSenarios@4be29ed9]" started-at="2025-06-13T18:33:39 IST" name="CloseConnectionWithDB" finished-at="2025-06-13T18:33:39 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="CloseConnectionWithDB()[pri:0, instance:ContactModule.ContactAllTestSenarios@7f485fda]" started-at="2025-06-17T17:44:13 IST" name="CloseConnectionWithDB" finished-at="2025-06-17T17:44:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Database Connection failed]]>

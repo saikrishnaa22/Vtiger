@@ -21,6 +21,7 @@ import org.testng.annotations.Parameters;
 import GenericUtilities.DataBaseUtility;
 import GenericUtilities.PropertyFileUtility;
 import GenericUtilities.WebDriverUtility;
+import ListenersUtillity.UtilityClassObject;
 import POMUtilities.HomePomPage;
 import POMUtilities.LoginPomPage;
 
@@ -59,7 +60,10 @@ public class BaseClass {
 	@BeforeClass
 	public void LaunchTheBrowser() throws IOException {
 
-		String Browser = prop.fetchdatafrompropertyfile("browser");
+		//String Browser = prop.fetchdatafrompropertyfile("browser");
+		String Browser = System.getProperty("browser", prop.fetchdatafrompropertyfile("browser"));
+
+		Reporter.log("Launch the browser", true);
 		if (Browser.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equals("edge")) {
@@ -68,6 +72,7 @@ public class BaseClass {
 			driver = new ChromeDriver();
 		}
          sdriver = driver;
+         UtilityClassObject.setDriver(driver);
 	}
 
 	@AfterClass
@@ -80,10 +85,16 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void Login() throws IOException {
-		String Url = prop.fetchdatafrompropertyfile("url");
+		/*String Url = prop.fetchdatafrompropertyfile("url");
 		String Username = prop.fetchdatafrompropertyfile("username");
 		String Password = prop.fetchdatafrompropertyfile("password");
 		String Timeouts = prop.fetchdatafrompropertyfile("timeouts");
+		*/
+		String Url = System.getProperty("url", prop.fetchdatafrompropertyfile("url"));
+		String Username =System.getProperty("username", prop.fetchdatafrompropertyfile("username"));
+		String Password =System.getProperty("password", prop.fetchdatafrompropertyfile("password"));
+		String Timeouts =System.getProperty("timeouts", prop.fetchdatafrompropertyfile("timeouts")); 
+				
 		LoginPomPage l = new LoginPomPage(driver);
 		Reporter.log("Navigated and logged in", true);
 		w.Maxmizethewindow(driver);

@@ -11,7 +11,7 @@
           <include name="Logout"/>
           <include name="ConfigureParallelExe"/>
           <include name="CloseParallelExe"/>
-          <include name="CreateConttsupportdate"/>
+          <include name="CreateConttName"/>
           <include name="ConnectionWithDB"/>
           <include name="Login"/>
         </methods>

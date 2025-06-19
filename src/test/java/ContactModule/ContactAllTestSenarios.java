@@ -17,11 +17,15 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import BaseClassUtility.BaseClass;
 import GenericUtilities.ExcelFileUtility;
 import GenericUtilities.JavaUtility;
 import GenericUtilities.PropertyFileUtility;
 import GenericUtilities.WebDriverUtility;
+import ListenersUtillity.Listenersss;
+import ListenersUtillity.UtilityClassObject;
 import POMUtilities.ContactInfoPompage;
 import POMUtilities.ContactPomPage;
 import POMUtilities.CreateNewContactPom;
@@ -32,12 +36,13 @@ import POMUtilities.OrganizationInfoPomPage;
 import POMUtilities.OrganizationPomPage;
 
 
-//@Listeners(ListenersUtillity.Listeners.class)
+@Listeners(ListenersUtillity.Listenersss.class)
 //CHANGES DONE IN CONTACT
 public class ContactAllTestSenarios extends BaseClass{
 	//@Parameters("browser")
 	
-@Test(groups ="smoke",retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
+//@Test(groups ="smoke",retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
+@Test
 
 	public void CreateConttName() throws IOException, InterruptedException {
 		
@@ -53,25 +58,30 @@ public class ContactAllTestSenarios extends BaseClass{
 	    WebDriverUtility w= new WebDriverUtility();
 	
 	  // click on the contact tab in homepage using pom
+	    UtilityClassObject.getTest().log(Status.INFO, "clicked on contact tab");
 		 HomePomPage h = new HomePomPage(driver);
 		 h.getContacttab();
 		
         // click on plus symbol
+		 UtilityClassObject.getTest().log(Status.INFO, "clicked on the plus symbol");
        ContactPomPage c= new ContactPomPage(driver);
        c.getConplusicon();
 		 
 		// Enter the contact name and click on the save Button
+       UtilityClassObject.getTest().log(Status.INFO, "Enterd the contact name ");
 		 CreateNewContactPom c_new = new CreateNewContactPom(driver);
 		 c_new.getLastnametf(contctname);
 		 c_new.getSave_btn();
-
-	    
+		
 	        // verify the contact  name//
+		 UtilityClassObject.getTest().log(Status.INFO, "verifying the contact name");
 	    ContactInfoPompage con_info= new ContactInfoPompage(driver);
 	 String lastname = con_info.getVerifylastnametf();
 	 Assert.assertEquals(lastname, contctname);
+	
 	 
 	    // click on the contact tab in homepage using pom
+	 UtilityClassObject.getTest().log(Status.INFO, "clicked on contact tab");
 		 h.getContacttab();
 		
 		// delete the created contact
@@ -91,7 +101,8 @@ public class ContactAllTestSenarios extends BaseClass{
 	
 	//@Parameters("browser")
 
-@Test(retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
+//@Test(retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
+@Test
 
 public void CreateContactWithOrg() throws EncryptedDocumentException, IOException, InterruptedException {
 	
@@ -113,16 +124,20 @@ public void CreateContactWithOrg() throws EncryptedDocumentException, IOExceptio
 	
 
 	// click on organization tab in the homepage
+	 UtilityClassObject.getTest().log(Status.INFO, "Click on org tab");
 	h.getOrganizationtab();
 
-	// click on plus symbol
+	// click on organization plus symbol
+	 UtilityClassObject.getTest().log(Status.INFO, "Click on org plus symbol");
 	o.getorgplusicon();
 
 	// Enter the ORganization name and click on the save Button
+	 UtilityClassObject.getTest().log(Status.INFO, "Click on org name");
 	org_new.getOrgname(orgname);
 	org_new.getSave_btn();
 
 	// verify the organization //
+	 UtilityClassObject.getTest().log(Status.INFO, "verified organization");
  OrganizationInfoPomPage org_info = new OrganizationInfoPomPage(driver);
 	String verifyorg_name = org_info.getverifyOrgname();
 
@@ -131,13 +146,16 @@ public void CreateContactWithOrg() throws EncryptedDocumentException, IOExceptio
  Assert.assertEquals(verifyorg_name, verifyorg_name);
 
 	// click on the contact tab in homepage using pom
+ UtilityClassObject.getTest().log(Status.INFO, "Clicked on contact tab");
 	h.getContacttab();
 
 	// click on the +image to create Contact
+	 UtilityClassObject.getTest().log(Status.INFO, "Clicked on create contact plus symbol");
 	ContactPomPage c=new ContactPomPage(driver);
 	c.getConplusicon();
 
 	// Enter the ORganization name and click on the save Button
+	 UtilityClassObject.getTest().log(Status.INFO, "Entered Org name");
 CreateNewContactPom c_new = new CreateNewContactPom(driver);
 ContactInfoPompage c_info= new ContactInfoPompage(driver);
 c_new.getLastnametf(contctname);
@@ -167,11 +185,13 @@ c_new.getLastnametf(contctname);
 	driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
 
 	// verify the contact name //
+	 UtilityClassObject.getTest().log(Status.INFO, "Verifed contact name");
 	String lastname = c_info.getVerifylastnametf();
 	// Hard Assert to validate contact name
 	Assert.assertEquals(lastname, contctname);
 
 	// verify the organization in the contact info page
+	UtilityClassObject.getTest().log(Status.INFO, "Verifed org name");
 
 	String verifyorg = driver
 			.findElement(By.xpath("//td[@id='mouseArea_Organization Name']/a[text()='" + orgname + "']")).getText();
@@ -182,38 +202,47 @@ c_new.getLastnametf(contctname);
 	}
 
 	// click on the contact tab in homepage using pom
+	UtilityClassObject.getTest().log(Status.INFO, "Click on  contact tab");
 
 	h.getContacttab();
 
 	// delete the created contact
+	UtilityClassObject.getTest().log(Status.INFO, "Deleted  contact");
 	driver.findElement(By
 			.xpath("//a[text()='" + contctname + "']/ancestor::tr[@bgcolor=\"white\"]/descendant::a[text()='del']"))
 			.click();
 	Thread.sleep(2000);
 
 	// handle the  alert popup
+	UtilityClassObject.getTest().log(Status.INFO, "Handled atert pop");
 	w.handleAlertandClickoK(driver);
 	
 	// click on organization tab with pom
+	UtilityClassObject.getTest().log(Status.INFO, "Clicked on Org tab");
 			h.getOrganizationtab();
 
 			// Delete the Created organization
+			UtilityClassObject.getTest().log(Status.INFO, "Deleted created org");
 			driver.findElement(
 					By.xpath("//a[text()='" + orgname + "']/ancestor::tr[@bgcolor='white']/descendant::a[text()='del']"))
 					.click();
 			Thread.sleep(3000);
+			
 			// Handle the Alert pop
+			UtilityClassObject.getTest().log(Status.INFO, "handled Alert pop up");
 			w.handleAlertandClickoK(driver);
 
 	// close excel sheet
+			UtilityClassObject.getTest().log(Status.INFO, "closed excel sheet");
 	ex_util.closeExcelWorkbook();
 
 }
 	
 	//@Parameters("browser")
 
-@Test(retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
+//@Test(retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
 
+@Test
 public void CreateConttsupportdate() throws IOException, InterruptedException {
 	
 
@@ -234,14 +263,17 @@ public void CreateConttsupportdate() throws IOException, InterruptedException {
 	
 	
     // click on the contact tab in homepage using pom
+	UtilityClassObject.getTest().log(Status.INFO, "Clicked on contact tab");
 	 HomePomPage h = new HomePomPage(driver);
 	 h.getContacttab();
 	 
-	// click on plus symbol
+	// click on contact plus symbol
+	 UtilityClassObject.getTest().log(Status.INFO, "Clicked on contact plus symbol");
 	
 	c.getConplusicon();
    
 	// Enter the contact name and pass the support date
+	UtilityClassObject.getTest().log(Status.INFO, "Entered contact name ");
    
      cn.getLastnametf(contctname);
      WebElement support_start_date = cn.getStartdatetf();
@@ -265,6 +297,7 @@ public void CreateConttsupportdate() throws IOException, InterruptedException {
 
 	
     // verify the contact name //
+	UtilityClassObject.getTest().log(Status.INFO, "Verifed contact name");
 	ContactInfoPompage c_info= new ContactInfoPompage(driver);
 	 String lastname = c_info.getVerifylastnametf();
 	 
@@ -273,6 +306,7 @@ public void CreateConttsupportdate() throws IOException, InterruptedException {
 	 
 
 	    // Verify the Support  start date 
+	 UtilityClassObject.getTest().log(Status.INFO, "Verifed Support date");
 	    
 	String  start_date =c_info.getVerifystartdate();
 	if (start_date.contains(_start_date))
@@ -285,6 +319,7 @@ public void CreateConttsupportdate() throws IOException, InterruptedException {
 	}
 	
 	// Verify the  Support End date 
+	UtilityClassObject.getTest().log(Status.INFO, "Verifed Support End Date");
 	String end_date  =c_info.getVerifyrnddate();
 	  if(end_date.contains(support_end_date))
 	  {
@@ -297,20 +332,24 @@ public void CreateConttsupportdate() throws IOException, InterruptedException {
 	  
 	  
 	// click on the contact tab in homepage using pom
+	  UtilityClassObject.getTest().log(Status.INFO, "Clicked on Contact tab");
 		
 		 h.getContacttab();
 		
 		// delete the created contact
+		 UtilityClassObject.getTest().log(Status.INFO, "Deleted  contact");
        driver.findElement
          (By.xpath("//a[text()='"+ contctname+ "']/ancestor::tr[@bgcolor=\"white\"]/descendant::a[text()='del']"))
          .click();
        Thread.sleep(3000);
 	    
 	    // handle the popup 
+       UtilityClassObject.getTest().log(Status.INFO, "Handled Alert popup");
        
     w.handleAlertandClickoK(driver);
    
 		// close workbook
+    UtilityClassObject.getTest().log(Status.INFO, "Closed workbook ");
 	ex_util.closeExcelWorkbook();
 		
 
