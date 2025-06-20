@@ -36,6 +36,8 @@ public class OrganizationAllTestSenarios extends BaseClass {
 
 	@Test(groups ="smoke" ,retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
 
+//	Create organization  test
+	
 	public void Createneworg() throws IOException, InterruptedException {
 
 		// Fetch the random number
