@@ -36,7 +36,7 @@ public class OrganizationAllTestSenarios extends BaseClass {
 
 	@Test(groups ="smoke" ,retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
 
-//	Create organization  test
+//	Different workspace Create organization  test
 	
 	public void Createneworg() throws IOException, InterruptedException {
 
