@@ -44,6 +44,8 @@ public class ContactAllTestSenarios extends BaseClass{
 //@Test(groups ="smoke",retryAnalyzer =ListenersUtillity.IRetryAnalyser.class)
 @Test
 
+// Create contact test
+
 	public void CreateConttName() throws IOException, InterruptedException {
 		
 		
